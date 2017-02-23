@@ -1,0 +1,23 @@
+<h1>String Interploation</h1>
+<p>
+  {{ stringInterpolation }} | {{ numberInterpolation }}
+</p>
+<hr>
+<h1>Propety Binding</h1>
+<input type="text" value="{{stringInterpolation}}">
+<hr>
+Using the [] property binds value and tells Angular2 that is not a defualt html attribute but referring to the DOM value property
+<br>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{redBorder: true, blueText: onTest()}">using class binding to style the paragraph</p>
+<input typpe="text" [value]="numberInterpolation">
+<p [ngStyle]="{color: 'green'}">This is GREEN</p>
+<app-property-binding [result]="10"></app-property-binding>
+<br>
+<hr>
+<h1>Event Binding</h1>
+<app-event-binding (clicked)="onClicked($event)"></app-event-binding>
+<hr>
+<h1>Two Way Binding</h1>
+Whatever is typed in one box will 2way bind to the other.
+<app-two-way-binding></app-two-way-binding>
