@@ -10,6 +10,7 @@ import { TwoWayBindingComponent } from './two-way-binding.component';
 })
 export class DatabindingComponent {
     stringInterpolation = 'This is string interpolation';
+    PropertyBinding = 'Property Binding';
     numberInterpolation = 2;
 
     onTest(){
